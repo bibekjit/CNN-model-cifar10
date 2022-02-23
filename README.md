@@ -1,6 +1,6 @@
 # CNN on CIFAR-10 
 
-1. The model consist of 6 `Convolution` and 4 `Maxpool` layers
+1. The model consist of 6 `Convolution` and 4 `AveragePooling` layers
 2. `Batchnormalization` is used with every convolution layer along with `Dropout` layers for regularization
-3. The model uses `Adam` optimizer with a reduced learning rate (1e-4), which deals very well with overfitting
-4. It was trained at 50 epochs at gave a validation accuracy of 87% without augmentation
+3. The model uses `Adam` optimizer with reducing learning rate 
+4. It was trained at 30 epochs and gave an `val_loss` of 0.36 and `val_accuracy` of 88.23% 
